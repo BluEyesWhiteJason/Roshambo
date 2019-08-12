@@ -30,5 +30,10 @@ namespace Roshambo
 
             return "whoops";
         }
+
+        public override string GetName()
+        {
+            return "Randy";
+        }
     }
 }

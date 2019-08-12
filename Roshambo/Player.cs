@@ -11,5 +11,7 @@ namespace Roshambo
 
         }
         abstract public string ChooseThrow();
+
+        abstract public string GetName();
     }
 }

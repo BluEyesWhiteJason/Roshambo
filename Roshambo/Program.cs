@@ -40,12 +40,10 @@ namespace Roshambo
 
 
             //Choose opponent based on player input
-            string oppName = "Ur not supposed to see this";
             Player opponent = new Rocky("no");
             if (num == 1)
             {
                 opponent = new Rocky("Rocky");
-                oppName = "Rocky";
 
             }
             else if (num == 2)
@@ -53,14 +51,13 @@ namespace Roshambo
                 Random randy = new Random();
                 int num2 = randy.Next(1, 4);
                 opponent = new Rando("Randy", randy);
-                oppName = "Randy";
             }
             else
             {
                 Console.WriteLine("it broked");
             }
 
-            Scoreboard boardScore = new Scoreboard(0, 0, 0, name , oppName); //it probably shouldn't say peter parker
+            Scoreboard boardScore = new Scoreboard(0, 0, 0, u.GetName() , opponent.GetName()); 
 
 
             while (true)

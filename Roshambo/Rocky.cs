@@ -17,5 +17,10 @@ namespace Roshambo
         {
             return RPSenum.Rock.ToString();
         }
+
+        public override string GetName()
+        {
+            return "Rocky";
+        }
     }
 }

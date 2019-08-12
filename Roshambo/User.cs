@@ -6,9 +6,16 @@ namespace Roshambo
 {
     class User : Player
     {
+        string name;
+
         public User(string Name) : base(Name)
         {
+            this.name = Name;
+        }
 
+        public override string GetName()
+        {
+            return name;
         }
 
         public override string ChooseThrow()

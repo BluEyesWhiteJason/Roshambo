@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{A41611CB-6043-44FE-88B5-98DD39694416}|Default">
   <MonoDevelop.Ide.ItemProperties.Roshambo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Roshambo/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Roshambo/User.cs">
     <Files>
-      <File FileName="Roshambo/Player.cs" Line="1" Column="1" />
-      <File FileName="Roshambo/Program.cs" Line="89" Column="42" />
-      <File FileName="Roshambo/Scoreboard.cs" />
+      <File FileName="Roshambo/Player.cs" Line="15" Column="35" />
+      <File FileName="Roshambo/Program.cs" Line="35" Column="51" />
+      <File FileName="Roshambo/Scoreboard.cs" Line="20" Column="32" />
+      <File FileName="Roshambo/Rocky.cs" Line="27" Column="1" />
+      <File FileName="Roshambo/User.cs" Line="13" Column="30" />
+      <File FileName="Roshambo/Rando.cs" Line="32" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Roshambo" expanded="True">
             <Node name="Roshambo" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="User.cs" selected="True" />
             </Node>
           </Node>
         </State>
