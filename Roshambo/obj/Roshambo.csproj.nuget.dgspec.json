@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jarmo\\source\\repos\\Roshambo\\Roshambo\\Roshambo.csproj": {}
+    "/Users/jason/Projects/Roshambo/Roshambo/Roshambo/Roshambo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jarmo\\source\\repos\\Roshambo\\Roshambo\\Roshambo.csproj": {
+    "/Users/jason/Projects/Roshambo/Roshambo/Roshambo/Roshambo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jarmo\\source\\repos\\Roshambo\\Roshambo\\Roshambo.csproj",
+        "projectUniqueName": "/Users/jason/Projects/Roshambo/Roshambo/Roshambo/Roshambo.csproj",
         "projectName": "Roshambo",
-        "projectPath": "C:\\Users\\Jarmo\\source\\repos\\Roshambo\\Roshambo\\Roshambo.csproj",
-        "packagesPath": "C:\\Users\\Jarmo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jarmo\\source\\repos\\Roshambo\\Roshambo\\obj\\",
+        "projectPath": "/Users/jason/Projects/Roshambo/Roshambo/Roshambo/Roshambo.csproj",
+        "packagesPath": "/Users/jason/.nuget/packages/",
+        "outputPath": "/Users/jason/Projects/Roshambo/Roshambo/Roshambo/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jarmo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/jason/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

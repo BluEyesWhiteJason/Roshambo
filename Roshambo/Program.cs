@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Linq;
 
 namespace Roshambo
 {
@@ -15,37 +16,53 @@ namespace Roshambo
 
             User u = new User(name);
             Console.Clear();
-            Console.WriteLine($"Alright {name}, if that IS your real name...");
+            Console.WriteLine($"Alright {name}");
             Console.WriteLine();
             Console.WriteLine("Which oppenent would you like to face in the ring?");
-            Console.WriteLine("1) Rocky - God of rocks");
+            Console.WriteLine("1) Rocky - the God of rocks I guess");
             Console.WriteLine("OR");
-            Console.WriteLine("2) Sir Boxochocolate - You never know what you'll get");
-            int num;
-            while (!int.TryParse(Console.ReadLine(), out num) && (num < 1 && num > 2))  // range validation no working
+            Console.WriteLine("2) Randy - Dude's a wildcard");
+            int num = 0;
+
+            
+            // validate input
+            bool validInpt = false;
+            bool isNum = false;
+            while (!validInpt)
             {
-                Console.WriteLine("That's not a choice! Enter either 1 or 2, or would you rather run?");
+                Console.WriteLine("Please input either 1 or 2");
+                isNum = int.TryParse(Console.ReadLine(), out num);
+                if (isNum == true && (num == 1 || num == 2) )
+                {
+                    validInpt = true;
+                }
             }
 
-            //initiate scoreboard using names
 
             //Choose opponent based on player input
+            string oppName = "Ur not supposed to see this";
             Player opponent = new Rocky("no");
             if (num == 1)
             {
                 opponent = new Rocky("Rocky");
+                oppName = "Rocky";
+
             }
             else if (num == 2)
             {
                 Random randy = new Random();
                 int num2 = randy.Next(1, 4);
-                opponent = new Rando("Sir Boxochocolate", randy);
+                opponent = new Rando("Randy", randy);
+                oppName = "Randy";
+            }
+            else
+            {
+                Console.WriteLine("it broked");
             }
 
-            Scoreboard boardScore = new Scoreboard(0, 0, 0, "peter" , "parker");
+            Scoreboard boardScore = new Scoreboard(0, 0, 0, name , oppName); //it probably shouldn't say peter parker
 
 
-            //Throw(u, opponent);
             while (true)
             {
                 sBoard(Throw(u, opponent), boardScore);
@@ -54,7 +71,7 @@ namespace Roshambo
                 {
                     break;
                 }
-            }
+            }   
 
         }
         
@@ -96,9 +113,9 @@ namespace Roshambo
             Console.WriteLine("Your opponent chose...");
             Thread.Sleep(3000);
             Console.WriteLine(oppThrow.ToUpper());
-            Thread.Sleep(750);
+            Thread.Sleep(4000);
 
-            // Determine who won
+            // Determine who wons
             Console.Clear();
             if (WinLoseDraw(playerThrow, oppThrow) == 0)
             {
