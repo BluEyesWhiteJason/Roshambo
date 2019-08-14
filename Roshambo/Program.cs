@@ -52,10 +52,7 @@ namespace Roshambo
                 int num2 = randy.Next(1, 4);
                 opponent = new Rando("Randy", randy);
             }
-            else
-            {
-                Console.WriteLine("it broked");
-            }
+    
 
             Scoreboard boardScore = new Scoreboard(0, 0, 0, u.GetName() , opponent.GetName()); 
 
@@ -112,7 +109,7 @@ namespace Roshambo
             Console.WriteLine(oppThrow.ToUpper());
             Thread.Sleep(4000);
 
-            // Determine who wons
+            // Determine who won
             Console.Clear();
             if (WinLoseDraw(playerThrow, oppThrow) == 0)
             {
@@ -193,13 +190,17 @@ namespace Roshambo
             string contEnter = Console.ReadLine();
 
             // Check if they want to continue
-            if (contEnter == "y" || contEnter == "Y")
+            if (contEnter.ToLower() == "y")
             {
                 return true;
             }
-            else 
+            else if (contEnter.ToLower() == "n")
             {
                 return false;
+            }
+            else 
+            {
+                return Proceed();
             }
         }
     }
